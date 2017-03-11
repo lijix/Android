@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context=".MainActivity" >
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/rb_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@drawable/selector_textcolor"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/rb_taoge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:gravity="center"
+            android:text="淘歌"
+            android:textColor="@drawable/selector_textcolor"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/rb_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@drawable/selector_textcolor"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/rb_recomment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:gravity="center"
+            android:text="推荐"
+            android:textColor="@drawable/selector_textcolor"
+            android:textSize="18dp" />
+    </RadioGroup>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rg_main"
+        android:layout_above="@+id/rl_main"
+       />
+        
+    <RelativeLayout 
+        android:id="@+id/rl_main"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        
+        >
+        <ImageView 
+            android:id="@+id/img_bottom"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/img_album_background"
+          
+            />
+
+        <ImageButton
+            android:id="@+id/img_bottom_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_menu_point" 
+            android:layout_centerVertical="true"/>
+	<View 
+	      android:id="@+id/v_line"
+	      android:layout_height="match_parent"
+	      android:layout_width="1dp"
+	      android:background="#999999"
+	      android:layout_marginRight="5dp"
+	      android:layout_toLeftOf="@+id/img_bottom_list"
+	    />
+	<ImageView 
+	      android:id="@+id/img_bottom_next"
+	      android:layout_height="wrap_content"
+	      android:layout_width="wrap_content"
+	      android:src="@android:drawable/ic_media_next"
+	      android:layout_toLeftOf="@+id/v_line"
+	      android:layout_marginRight="5dp"
+	      android:layout_centerVertical="true"
+	      
+	    />
+	<ImageView 
+	    android:id="@+id/img_bottom_play"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:src="@android:drawable/ic_media_play"
+	     android:layout_toLeftOf="@+id/img_bottom_next"
+	     android:layout_centerVertical="true"
+	     android:layout_marginRight="5dp"
+	    />
+	<LinearLayout 
+	    android:id="@+id/ll_bottom"
+	      android:layout_height="match_parent"
+	      android:layout_width="wrap_content"
+	      android:orientation="vertical"
+	      android:layout_toRightOf="@+id/img_bottom"
+	      android:layout_toLeftOf="@+id/img_bottom_play"
+	    >
+	    <TextView 
+	         android:layout_height="0dp"
+	         android:layout_weight="1.0"
+	         android:layout_width="match_parent"
+	         android:text="unknowe"
+	         android:textColor="#999999"
+	         
+	        />
+	    <TextView 
+	         android:layout_height="0dp"
+	         android:layout_weight="1.0"
+	         android:layout_width="match_parent"
+	         android:text="unknowe"
+	         android:textColor="#999999"
+	        />
+	    <RelativeLayout 
+	         android:layout_height="0dp"
+	         android:layout_weight="1.0"
+	         android:layout_width="match_parent"
+	        
+	        >
+	        <TextView 
+	             android:id="@+id/dv_bottom_currenttime"
+	             android:layout_height="match_parent"
+	             android:layout_width="wrap_content"
+	             android:text="00:00"
+	             android:textColor="#fff"
+	             android:gravity="center_vertical"
+	            />
+	        <View 
+	            android:id="@+id/view_bottom"
+	            android:layout_height="1dp"
+	            android:layout_width="5dp"
+	            android:background="#fff"
+	            android:layout_toRightOf="@+id/dv_bottom_currenttime"
+	            android:layout_centerVertical="true"/>
+	        <TextView 
+	            android:id="@+id/tv_bottom_duration"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="00:00"
+	            android:textColor="#fff"
+	            android:layout_toRightOf="@+id/view_bottom"
+	            android:layout_centerVertical="true"
+	            />
+	    </RelativeLayout>
+	
+	</LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

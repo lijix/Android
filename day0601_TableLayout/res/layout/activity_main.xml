@@ -1,0 +1,95 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3DC0FA"
+    tools:context=".MainActivity" >
+	<!-- 第一行 -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+        </RelativeLayout>
+    </TableRow>
+<!-- 第二行 -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+        </RelativeLayout>
+    </TableRow>
+<!-- 第三行 -->
+    <TableRow
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+        </RelativeLayout>
+    </TableRow>
+
+</TableLayout>

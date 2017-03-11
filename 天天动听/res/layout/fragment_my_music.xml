@@ -1,0 +1,335 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyMusicFragment" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <!-- 第一行 -->
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_one_one"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+
+            <ImageView
+                android:id="@+id/img_one_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_local_music" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_one_one"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="我的音乐"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_one_two"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+
+            <ImageView
+                android:id="@+id/img_one_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_favorites" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_one_two"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="我的最爱"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_one_three"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+
+            <ImageView
+                android:id="@+id/img_one_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_folder_plus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_one_three"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="文件夹"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </TableRow>
+    <!-- 第二行 -->
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_two_one"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+
+            <ImageView
+                android:id="@+id/img_two_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_artist_plus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_two_one"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="歌手"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_two_two"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+
+            <ImageView
+                android:id="@+id/img_two_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_album_plus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_two_two"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="专辑"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_two_three"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+
+            <ImageView
+                android:id="@+id/img_two_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_recent_play_plus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_two_three"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="最近播放"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </TableRow>
+    <!-- 第三行 -->
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_three_one"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+
+            <ImageView
+                android:id="@+id/img_three_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_genre_plus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_three_one"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="风格"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_three_two"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+
+            <ImageView
+                android:id="@+id/img_three_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_recent_add_plus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_three_two"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="最近添加"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_three_three"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+
+            <ImageView
+                android:id="@+id/img_three_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_new_playlist" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_three_three"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="新建列表"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </TableRow>
+
+    <!-- 第四行 -->
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_four_one"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+
+            <ImageView
+                android:id="@+id/img_four_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_download" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_four_one"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="下载管理"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_four_two"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+
+            <ImageView
+                android:id="@+id/img_four_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_library_music_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_four_two"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="音乐面"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_four_three"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:background="#999" >
+
+            <ImageView
+                android:id="@+id/img_four_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_home_custom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_four_three"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="定制首页"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </TableRow>
+
+</TableLayout>

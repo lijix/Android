@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 没有被选中是的那张图片 -->
+    <item  android:state_checked="false" android:drawable="@drawable/ic_tab_deal_unselected"></item>
+	<!-- 被选中状态时那张图片 -->
+	<item android:state_checked="true" android:drawable="@drawable/ic_tab_deal_selected"></item>
+	
+</selector>
+
